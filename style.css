@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f9eff0;
+}
+#container-1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#start-btn {
+    background-color: #cc8d8b;
+    width: 30%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    animation: bounce 1s ease-in-out infinite;
+    
+
+
+    &:hover {
+        animation-play-state: paused;
+        background-color: #ad706e;
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(218, 169, 167, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+        color: #f9eff0;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    font-weight:200;
+    font-size: 20px;
+    color: #322f2e;
+}
+.question-num {
+    text-align: center;
+}
+.score {
+    text-align: center;
+}
+.score-num {
+    color: #cc8d8b;
+    font-size: 40px;
+    font-weight: bold;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+ }
+ h2 {
+    margin-bottom: 25px;
+    color: #322f2e;
+ }
+.choice-container{
+    display: flex;
+    
+    margin-bottom: 0.5rem ;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 0.1rem solid rgb(251, 221, 224);
+    background-color: #ffffff;
+    
+
+}
+
+.choice-container:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(218, 169, 167, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    
+
+}
+.choice-prefex {
+    padding: 1.5rem 2rem;
+    background-color: #cc8d8b;
+    color: #f9eff0;
+}
+
+.choice-detail {
+    padding: 1.5rem;
+    color: #322f2e;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.next {
+    background-color: #cc8d8b;
+    width: 100px;
+    margin: auto 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+        background-color: #ad706e;
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(218, 169, 167, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+        color: #f9eff0;
+}
+}
+#progressBar {
+    width: 20rem;
+    height:4rem;
+    border: 0.3rem solid #cc8d8b;
+    
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color: #cc8d8b;
+    width: 0%;
+
+}
